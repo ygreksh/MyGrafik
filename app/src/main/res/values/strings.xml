@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyGrafik</string>
+    <string name="textSun">Sun</string>
+    <string name="textMoon">Moon</string>
+    <string name="textAzi">azi</string>
+    <string name="textAlt">alt</string>
+</resources>
