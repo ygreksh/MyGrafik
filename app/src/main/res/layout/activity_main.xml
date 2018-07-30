@@ -112,6 +112,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:max="360"
+            android:progress="180"
             tools:layout_editor_absoluteX="7dp"
             tools:layout_editor_absoluteY="166dp" />
 
@@ -120,6 +121,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:max="90"
+            android:progress="45"
             tools:layout_editor_absoluteX="7dp"
             tools:layout_editor_absoluteY="166dp" />
     </LinearLayout>

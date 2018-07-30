@@ -9,11 +9,19 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.SeekBar;
 
 public class Draw2D extends View {
     private Paint mPaint = new Paint();
     private Bitmap mBitmapSun;
     private Bitmap mBitmapMoon2;
+
+    EditText editTextSunAzi;
+    EditText editTextSunAlt;
+    EditText editTextMoonAzi;
+    EditText editTextMoonAlt;
+    SeekBar seekBarAzi;
+    SeekBar seekBarAlt;
 
     public Draw2D(Context context) {
         super(context);
@@ -41,10 +49,48 @@ public class Draw2D extends View {
         double polarMoonAzi = 0;
         double polarMoonAlt = 0;
 
-        EditText editTextSunAzi = findViewById(R.id.editTextSunAzi);
-        EditText editTextSunAlt = findViewById(R.id.editTextSunAlt);
-        EditText editTextMoonAzi = findViewById(R.id.editTextMoonAzi);
-        EditText editTextMoonAlt = findViewById(R.id.editTextMoonAlt);
+        editTextSunAzi = findViewById(R.id.editTextSunAzi);
+        editTextSunAlt = findViewById(R.id.editTextSunAlt);
+        editTextMoonAzi = findViewById(R.id.editTextMoonAzi);
+        editTextMoonAlt = findViewById(R.id.editTextMoonAlt);
+        //seekBarAzi = findViewById(R.id.seekBarSunAzi);
+        //seekBarAlt = findViewById(R.id.seekBarSunAlt);
+        /*
+        seekBarAzi.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                editTextSunAzi.setText(String.valueOf(progress));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        */
+        /*
+        seekBarAlt.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                editTextSunAlt.setText(String.valueOf(progress));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        */
         /*
         polarSunAzi = Double.parseDouble(String.valueOf(editTextSunAzi.getText()));
         polarSunAlt = Double.parseDouble(String.valueOf(editTextSunAlt.getText()));
